@@ -1,0 +1,15 @@
+{
+  "name": "native-element-test-helper",
+  "version": "1.0.0",
+  "description": "A helper library for examining and manually testing Cloud Elements native elements json files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "lukevance",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cloudelements-cehandler": "^0.5.1"
+  }
+}
