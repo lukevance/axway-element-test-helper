@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer sampleVendorAuthToken"
+  },
+  "paths": {
+    "id": "12345"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/contacts"
+  },
+  "queryParameters": {
+    "fields": "Id,Website,AccountNumber"
+  },
+  "body": ""
+}
