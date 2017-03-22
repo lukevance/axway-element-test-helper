@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token" ,
+    "siteAddress":"your-subdomain"
+  },
+ "operation": {
+    "method": "GET",
+    "path": "/hubs/native/tickets"
+  },
+  "queryParameters": {
+    "pageSize": 25,
+    "page": 1
+  },
+  "body": {}
+}
