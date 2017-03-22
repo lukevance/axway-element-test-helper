@@ -14,7 +14,10 @@ const getElement = (path) => {
 const executeCall = (element, request_data) => {
   return cehandler.handler(element)(request_data, {
       requestId: 'fake-run-request',
-      succeed: o => console.log(JSON.stringify(o, null, 2)),
+      succeed: o => {
+        // console.log('done');
+        console.log(JSON.stringify(o, null, 2));
+      },
       fail: o => console.warn('failure', typeof(o), o),
       done: (err, o) => {
         if (err != null) { console.warn('error', typeof(err), err); }
@@ -37,7 +40,7 @@ const makeRequest = (element, request) => {
       request = request + '.json';
     }
     fs.readdir('./requests', (err, files) => {
-      if (err) throw err;
+      if (err) {throw err;}
       if (files.indexOf(request) >= 0){
         let request_body = require('./requests/' + request);
         executeCall(element, request_body);
@@ -60,10 +63,36 @@ const listResources = (element) => {
   }
 };
 
+// function to list all resources in an element JSON
+const listParams = (element) => {
+  if (element.resources && (element.resources.length > 0)) {
+    let count = 0;
+    element.resources.forEach((resource) => {
+      if (resource.path) {
+        count++;
+          // console.log(chalk.blue(resource.method + ": " + resource.path));
+          let version = false;
+          resource.parameters.forEach((param) => {
+            // console.log(param.name);
+            if (param.name === 'api.version'){
+              // console.log(chalk.blue(resource.method + ": " + resource.path));
+              version = true;
+            }
+            if (!version){
+              console.log(chalk.blue(resource.method + ": " + resource.path));
+            }
+            // console.log('     ' + chalk.yellow(param.name));
+          });
+      }
+    });
+    console.log(count);
+  }
+};
+
 if (args.length < 1) {
   console.log(chalk.red('ERROR: please provide a command'));
   console.log();
-  console.log(chalk.yellow('commands: ') + chalk.blue('list-resources') + chalk.yellow(' | ') + chalk.blue('new-req') + chalk.blue('make-req'));
+  console.log(chalk.yellow('commands: ') + chalk.blue('list-resources') + chalk.yellow(' | ') + chalk.blue('make-req'));
   console.log(chalk.yellow('    example:'));
   console.log(chalk.yellow('    node index.js list /path/to/element.json'));
 } else if (args.length < 2) {
@@ -75,6 +104,10 @@ if (args.length < 1) {
   console.log('list resources');
   let element = getElement(args[1]);
   listResources(element);
+} else if (args.indexOf('list-params') === 0) {
+  console.log('list params');
+  let element = getElement(args[1]);
+  listParams(element);
 } else if (args.indexOf('make-req') === 0) {
   // check for both path to element and requestBody name
   if (args.length >= 3) {
