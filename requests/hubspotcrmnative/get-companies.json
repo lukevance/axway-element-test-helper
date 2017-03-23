@@ -1,0 +1,11 @@
+{
+  "headers": {
+   "x-vendor-authorization" : "Bearer CPW_2-qsKxICAQEYhe8aIIXRsQEo0sECMhkAQvuSE3KExBwErmB-8EUhqgHQIFQMwosH"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/companies"
+  },
+  "body": {
+  }
+}

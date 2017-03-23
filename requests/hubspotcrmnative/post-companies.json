@@ -1,0 +1,23 @@
+{
+  "headers": {
+   "x-vendor-authorization" : "Bearer CPW_2-qsKxICAQEYhe8aIIXRsQEo0sECMhkAQvuSE3KExBwErmB-8EUhqgHQIFQMwosH"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/companies"
+  },
+  "body": {
+  "properties": [
+    {
+      "name": "name",
+      "value": "A company name"
+    },
+    {
+      "name": "description",
+      "value": "A company description"
+    }
+  ]
+
+
+  }
+}

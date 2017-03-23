@@ -1,0 +1,21 @@
+{
+    "headers": {
+      "x-vendor-authorization" : "Bearer CPW_2-qsKxICAQEYhe8aIIXRsQEo0sECMhkAQvuSE3KExBwErmB-8EUhqgHQIFQMwosH"
+    },
+    "paths": {
+     "id": "14938285"
+    },
+    "operation": {
+        "method": "PATCH",
+        "path": "/hubs/native/contacts/{id}"
+    },
+    "body": {
+  "properties": [
+    {
+      "name": "description",
+      "value": "Updated description from native testing"
+    }
+  ]
+}
+
+}
