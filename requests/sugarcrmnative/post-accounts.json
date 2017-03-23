@@ -1,0 +1,19 @@
+{
+  "headers": {
+   "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/accounts"
+  },
+  "body": 
+ {
+  "name": "Cloud Elements Test Account",
+  "twitter": "@CloudElements",
+  "email1": "developer-posting@cloud-elements.com",
+  "description": "The best company of all time",
+  "website": "www.cloud-elements.com"
+}
+
+  
+}

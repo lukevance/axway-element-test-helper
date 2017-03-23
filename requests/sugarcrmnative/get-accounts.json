@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
+ },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/accounts"
+  },
+  "body": {}
+}
