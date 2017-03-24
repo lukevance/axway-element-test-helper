@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer 84075729010579fde78c34bac13f3be8",
+    "base.url":"https://us9.api.mailchimp.com/3.0"
+  },
+  "paths": {	
+    "id": "f334a336d4"
+},
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/lists/{id}"
+  },
+  "body": {
+  }
+}
