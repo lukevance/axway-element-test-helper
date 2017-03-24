@@ -1,10 +1,17 @@
 {
   "headers": {
-    "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
- },
+    "x-vendor-authorization": "Bearer 89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"oauth.user.token" : "89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"site.url" : "cloudelementent.sugarondemand.com"
+  },
   "operation": {
     "method": "GET",
-    "path": "/hubs/native/accounts"
+    "path": "/accounts"
+  },
+  "queryParameters": {
+    "pageSize": 20,
+    "page": 1,
+	"where" : "email1='developer-posting@cloud-elements.com'"
   },
   "body": {}
 }

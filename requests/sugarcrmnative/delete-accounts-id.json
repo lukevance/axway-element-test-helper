@@ -1,13 +1,15 @@
 {
   "headers": {
-    "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
+  "x-vendor-authorization": "Bearer 89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"oauth.user.token" : "89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"site.url" : "cloudelementent.sugarondemand.com"
   },
-   "paths": {
-        "id": "97e92dce-095e-11e7-8b0c-02b1b963c90d"
-    },
-    "operation": {
-        "method": "DELETE",
-        "path": "/hubs/native/accounts/{id}"
-    },
-    "body": {}
-	}
+  "paths": {
+    "accountId": "97e92dce-095e-11e7-8b0c-02b1b963c90d"
+  },
+  "operation": {
+    "method": "DELETE",
+    "path": "/hubs/native/accounts/{accountId}"
+  },
+  "body": {}
+}

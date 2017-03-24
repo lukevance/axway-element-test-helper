@@ -1,19 +1,18 @@
 {
   "headers": {
-   "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
+     "x-vendor-authorization": "Bearer 89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"oauth.user.token" : "89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"site.url" : "cloudelementent.sugarondemand.com"
   },
   "operation": {
     "method": "POST",
-    "path": "/hubs/native/accounts"
+    "path": "/accounts"
   },
-  "body": 
- {
-  "name": "Cloud Elements Test Account",
-  "twitter": "@CloudElements",
-  "email1": "developer-posting@cloud-elements.com",
-  "description": "The best company of all time",
-  "website": "www.cloud-elements.com"
-}
-
-  
+  "body": {
+    "name": "Cloud Elements Test Account",
+    "twitter": "@CloudElements",
+    "email1": "developer-posting@cloud-elements.com",
+    "description": "The best company of all time",
+    "website": "www.cloud-elements.com"
+  }
 }

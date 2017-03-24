@@ -1,20 +1,21 @@
 {
-    "headers": {
-      "x-vendor-authorization" : "Bearer 9cae550f-5520-4684-b737-ebeb305ff64f"
-    },
-    "paths": {
-     "id": "a7fc2af4-0963-11e7-b93b-0273927739c9"
-    },
-    "operation": {
-        "method": "PATCH",
-        "path": "/hubs/native/accounts/{id}"
-    },
-    "body": {
-  "name": "Cloud Elements Test Account",
-  "twitter": "@CloudElements",
-  "email1": "developer-update@cloud-elements.com",
-  "description": "The best company of all time Updated",
-  "website": "www.cloud-elements.com"
-}
-
+  "headers": {
+    "x-vendor-authorization": "Bearer 89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"oauth.user.token" : "89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+	"site.url" : "cloudelementent.sugarondemand.com"
+  },
+  "paths": {
+    "accountId": "a7fc2af4-0963-11e7-b93b-0273927739c9"
+  },
+  "operation": {
+    "method": "PATCH",
+    "path": "/accounts/{accountId}"
+  },
+  "body": {
+    "name": "Cloud Elements Test Account",
+    "twitter": "@CloudElements",
+    "email1": "developer-update@cloud-elements.com",
+    "description": "The best company of all time Updated",
+    "website": "www.cloud-elements.com"
+  }
 }
