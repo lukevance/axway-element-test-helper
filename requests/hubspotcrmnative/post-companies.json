@@ -1,0 +1,23 @@
+{
+  "headers": {
+   "x-vendor-authorization" : "Bearer your-auth-token-here"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/companies"
+  },
+  "body": {
+  "properties": [
+    {
+      "name": "name",
+      "value": "A company name"
+    },
+    {
+      "name": "description",
+      "value": "A company description"
+    }
+  ]
+
+
+  }
+}
