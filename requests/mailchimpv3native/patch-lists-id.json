@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here",
+    "base.url":"https://us9.api.mailchimp.com/3.0"
+  },
+  "paths": {	
+    "id": "f334a336d4"
+},
+  "operation": {
+    "method": "PATCH",
+    "path": "/hubs/native/lists/{id}"
+  },
+  "body": {
+	  "name": "CE TEST LIST PATCHED"
+  }
+}
