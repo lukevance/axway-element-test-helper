@@ -1,6 +1,6 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer 84075729010579fde78c34bac13f3be8",
+    "x-vendor-authorization": "Bearer your-auth-token-here",
     "base.url":"https://us9.api.mailchimp.com/3.0"
   },
   "operation": {
