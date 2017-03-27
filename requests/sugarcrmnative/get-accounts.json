@@ -1,7 +1,7 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer 89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
-	"oauth.user.token" : "89c6bd08-1ea5-4d5d-84fb-672848b1ebe6",
+   "x-vendor-authorization": "Bearer your-auth-token-here",
+	"oauth.user.token" : "your-auth-token-here",
 	"site.url" : "cloudelementent.sugarondemand.com"
   },
   "operation": {
