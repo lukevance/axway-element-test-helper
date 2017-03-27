@@ -1,0 +1,13 @@
+{
+  "headers": {
+   "x-vendor-authorization" : "Bearer your-auth-token-here"
+  },
+   "paths": {
+        "id": "14851582"
+    },
+    "operation": {
+        "method": "DELETE",
+        "path": "/hubs/native/companies/{id}"
+    },
+    "body": {}
+	}
