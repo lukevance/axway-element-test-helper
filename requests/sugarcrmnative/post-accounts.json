@@ -1,0 +1,18 @@
+{
+  "headers": {
+     "x-vendor-authorization": "Bearer your-auth-token-here",
+	"oauth.user.token" : "your-auth-token-here",
+	"site.url" : "cloudelementent.sugarondemand.com"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/accounts"
+  },
+  "body": {
+    "name": "Cloud Elements Test Account",
+    "twitter": "@CloudElements",
+    "email1": "developer-posting@cloud-elements.com",
+    "description": "The best company of all time",
+    "website": "www.cloud-elements.com"
+  }
+}

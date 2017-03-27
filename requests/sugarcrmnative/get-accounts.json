@@ -1,0 +1,17 @@
+{
+  "headers": {
+   "x-vendor-authorization": "Bearer your-auth-token-here",
+	"oauth.user.token" : "your-auth-token-here",
+	"site.url" : "cloudelementent.sugarondemand.com"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/accounts"
+  },
+  "queryParameters": {
+    "pageSize": 20,
+    "page": 1,
+	"where" : "email1='developer-posting@cloud-elements.com'"
+  },
+  "body": {}
+}
