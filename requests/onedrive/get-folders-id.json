@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer giAJjkGHO0/jrIQdaL+SrhyXiU5WLH75qZHngXrRx6zoyVmWYFopZLo44b6g2kDAg371oxRJN2BAcgMiFMhoZAg=="
+  },
+  "paths" :{
+    "id": "6E126769CC1196CA!9853"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/folders/{id}/metadata"
+  },
+  "body": {
+  }
+}
