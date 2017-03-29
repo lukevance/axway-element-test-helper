@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+"paths": {
+	"id": "0B7jZ970JnkUWN0h5VXFkVzBwZE0"
+  },
+ "operation": {
+    "method": "PATCH",
+    "path": "/hubs/native/files/{id}/metadata"
+  },  
+  "body": {
+     "name":"sampleloip"
+     
+  }
+}
+
+
+

@@ -1,0 +1,33 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here",
+    "base.url":"https://us9.api.mailchimp.com/3.0"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/lists"
+  },
+  "body": {
+    "beamer_address": "us9-3f28d2bde7-886f125ea2@inbound.mailchimp.com",
+
+    "contact": {
+      
+      "address1": "baner",
+      "city": "pune",
+      "company": "gs lab",
+      "country": "india",
+      "phone": "7887654567",
+      "state": "MH",
+      "zip": "411045"
+    },
+   "name": "Sample List March24",
+   "permission_reminder" : "Told tou",
+   "email_type_option" : false,
+   "campaign_defaults" : {
+     "from_email" : "a@ce.com",
+     "from_name" : "gg",
+     "language" : "eng",
+     "subject" : "na"
+   }
+  }
+}

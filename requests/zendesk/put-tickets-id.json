@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token",
+    "siteAddress": "your-subdomain"
+  },
+  "paths": {
+      "id": "3136"
+  },
+ "operation": {
+    "method": "PUT",
+    "path": "/hubs/native/tickets/{id}"
+  },
+  "queryParameters": {},
+  "body": {
+    "comment": "testupdate comment",
+    "subject": "testupdate ticket"
+  }
+}

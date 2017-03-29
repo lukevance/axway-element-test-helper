@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer 11ef2e90713ed5e911c9afa1f30f561ff3bedd0d56ea3e799964a1ef48824240" ,
+    "siteAddress":"cloudelementsdev"
+  },
+
+ "operation": {
+    "method": "POST",
+    "path": "/hubs/native/tickets"
+  },
+"queryParameters": {
+},
+  
+  "body": {
+      "requester_id": 350087189,
+      "comment": "test comment",
+      "subject": "test ticket"
+  }
+
+
+}
+
+
+

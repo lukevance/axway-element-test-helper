@@ -1,0 +1,21 @@
+{
+    "headers": {
+      "x-vendor-authorization" : "Bearer your-auth-token-here"
+    },
+    "paths": {
+     "id": "14938285"
+    },
+    "operation": {
+        "method": "PATCH",
+        "path": "/hubs/native/contacts/{id}"
+    },
+    "body": {
+  "properties": [
+    {
+      "name": "description",
+      "value": "Updated description from native testing"
+    }
+  ]
+}
+
+}

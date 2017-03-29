@@ -28,8 +28,14 @@ $ node index.js list-resources /path/to/element.json
 
 To make a request to one of the supported resources in the element.json file first create a relevant request in the `/requests` directory. A template request body exists there. Be sure to acquire an authorization header for the service that you are planning to make a request to and add the header to the request body file in the `/requests` directory.
 
-Then use the below command to execute the request.
+Then use the below command to execute the request. This command can take a request
 ```bash
-$ node index.js make-req /path/to/element.json requestBodyFileName
+$ node index.js make-req /path/to/element.json [requestBodyFileName || requestBodyFilePath]
+```
+Examples:
+```bash
+$ node index.js make-req /path/to/element.json get-contacts
+$ node index.js make-req /path/to/element.json zendesk/get-contacts
+$ node index.js make-req /path/to/element.json zendesk/get-contacts.json
 ```
 The result of your call will be logged in the terminal.
