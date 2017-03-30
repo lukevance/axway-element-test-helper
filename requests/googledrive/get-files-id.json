@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+"paths": {
+	"id": "0B7jZ970JnkUWN0h5VXFkVzBwZE0"
+  },
+"queryParameters": {
+    "mimeType" : "application/octet-stream"
+  },
+ "operation": {
+    "method": "GET",
+    "path": "/hubs/native/files/{id}"
+  },
+  "body": {}
+}
