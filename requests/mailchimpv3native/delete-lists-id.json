@@ -1,9 +1,9 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer your-auth-token-here",
-    "base.url":"https://us9.api.mailchimp.com/3.0"
+    "x-vendor-authorization": "Bearer your-auth-token",
+    "serverAddress":"us9.api.mailchimp.com"
   },
-  "paths": {	
+  "paths": {
     "id": "9ba5ef63f7"
 },
   "operation": {

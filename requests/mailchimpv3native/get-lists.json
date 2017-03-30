@@ -1,15 +1,15 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer your-auth-token-here",
-    "base.url":"https://us9.api.mailchimp.com/3.0"
+    "x-vendor-authorization": "Bearer your-auth-token",
+    "serverAddress":"us9.api.mailchimp.com"
   },
   "operation": {
     "method": "GET",
     "path": "/hubs/native/lists"
   },
   "queryParameters": {
-    "page": "0",
-    "pageSize": "100"
+    "pageSize": 40,
+    "page": 1
   },
   "body": {
   }
