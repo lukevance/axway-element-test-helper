@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+  "queryParameters": {
+    "depth" : "partial",
+	"lastUpdatedAt" : "1481512276",
+	"orderBy" : "lastName",
+	"search" : "barbaraallen@fake.com"
+  },
+ "operation": {
+    "method": "GET",
+    "path": "/hubs/native/contacts"
+  }
+}

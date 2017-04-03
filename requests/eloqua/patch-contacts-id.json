@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+  "body": {
+    "name" : "cdsddcmcx",
+	"emailAddress" : "cdxs@sd.com"
+  },
+  "paths" : {
+   "id" : "47228"
+  },
+  "operation": {
+    "method": "PATCH",
+    "path": "/hubs/native/contacts/{id}"
+  }
+}
+
+
