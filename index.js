@@ -4,6 +4,13 @@ const cehandler = require('cloudelements-cehandler');
 const fs = require('fs');
 // const inquirer = require('inquirer');
 const chalk = require('chalk');
+const readWrite = require('./src/read-write');
+const removeAmazon = readWrite.removeAmazon;
+const listParams = readWrite.listParams;
+const listResources = readWrite.listResources;
+const validate = require('./src/validate');
+const validateHooks = validate.hooks;
+
 // store only the arguments after "node index.js"
 const args = process.argv.slice(2);
 
@@ -86,43 +93,6 @@ const makeRequest = (element, request) => {
 
 };
 
-// function to list all resources in an element JSON
-const listResources = (element) => {
-  if (element.resources && (element.resources.length > 0)) {
-    element.resources.forEach((resource) => {
-      if (resource.path) {
-          console.log(resource.method + ": " + resource.path);
-      }
-    });
-  }
-};
-
-// function to list all resources in an element JSON
-const listParams = (element) => {
-  if (element.resources && (element.resources.length > 0)) {
-    let count = 0;
-    element.resources.forEach((resource) => {
-      if (resource.path) {
-        count++;
-          // console.log(chalk.blue(resource.method + ": " + resource.path));
-          let version = false;
-          resource.parameters.forEach((param) => {
-            // console.log(param.name);
-            if (param.name === 'api.version'){
-              // console.log(chalk.blue(resource.method + ": " + resource.path));
-              version = true;
-            }
-            if (!version){
-              console.log(chalk.blue(resource.method + ": " + resource.path));
-            }
-            // console.log('     ' + chalk.yellow(param.name));
-          });
-      }
-    });
-    console.log(count);
-  }
-};
-
 if (args.length < 1) {
   console.log(chalk.red('ERROR: please provide a command'));
   console.log();
@@ -152,10 +122,12 @@ if (args.length < 1) {
   } else {
     console.log('please include a request object and an element.json file');
   }
-} else if (args.indexOf('test-request') === 0) {
-  getRequestBody(args[1], (body) => {
-    console.log(body);
-  });
+} else if (args.indexOf('rm-prop') === 0) {
+  let swagger = getElement(args[1]);
+  removeAmazon(swagger, args[2]);
+} else if (args.indexOf('validate-hooks') === 0) {
+  let element = getElement(args[1]);
+  validateHooks(element);
 } else {
   console.log(args[0] + ' is not currently a supported command');
   console.log('try list or requests');
