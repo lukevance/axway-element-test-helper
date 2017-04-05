@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here",
+"base.url":"https://dev18488.service-now.com/api/now/v1/table"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/accounts"
+  },
+  "body": {
+  "phone": "1 (900) 635-8346",
+  "street": "123 Test Street",
+  "state": "CO",
+  "city": "Denver",
+  "website": "www.cloud-elements.com",
+  "num_employees": "4000",
+  "revenue_per_year": "22010000000",
+  "publicly_traded": "false",
+  "manufacturer": "false",
+  "vendor": "true"
+}
+}
