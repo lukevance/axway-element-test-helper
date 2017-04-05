@@ -1,0 +1,14 @@
+{
+  "headers": {
+   "x-vendor-authorization": "Bearer your-auth-token-here",
+"base.url":"https://dev18488.service-now.com/api/now/v1/table"
+  },
+  "paths": {
+    "id": "aed08329db313200b11df6fdbf961932"
+  },
+  "operation": {
+    "method": "DELETE",
+    "path": "/accounts/{id}"
+  },
+  "body": {}
+}

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here",
+"base.url":"https://dev18488.service-now.com/api/now/v1/table"
+  },
+  "paths": {
+    "id": "3430cbe5db313200b11df6fdbf96194c"
+  },
+  "operation": {
+    "method": "PATCH",
+    "path": "/accounts/{id}"
+  },
+  "body":  {
+      "visibility": "pub",
+      "default_from_email": "ze-churros@cloud-elements.com",
+      "use_awesomebar": true,
+      "name": "Churros update the list",
+      "permission_reminder": "Because churros"
+    }
+  }
