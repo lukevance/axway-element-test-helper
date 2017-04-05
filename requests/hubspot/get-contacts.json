@@ -1,0 +1,13 @@
+{
+    "headers": {
+        "x-vendor-authorization": "Bearer 8ad23be8-d36f-4408-8f5a-f47a5b213397"
+    },
+    "operation": {
+        "method": "GET",
+        "path": "/contacts"
+    },
+    "queryParameters": {
+        "pageSize": "100"
+    },
+    "body": {}
+}

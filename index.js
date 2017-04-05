@@ -9,7 +9,6 @@ const removeAmazon = readWrite.removeAmazon;
 const listParams = readWrite.listParams;
 const listResources = readWrite.listResources;
 const validate = require('./src/validate');
-const validateHooks = validate.hooks;
 
 // store only the arguments after "node index.js"
 const args = process.argv.slice(2);
@@ -127,7 +126,10 @@ if (args.length < 1) {
   removeAmazon(swagger, args[2]);
 } else if (args.indexOf('validate-hooks') === 0) {
   let element = getElement(args[1]);
-  validateHooks(element);
+  validate.hooks(element);
+} else if (args.indexOf('validate-params') === 0) {
+  let element = getElement(args[1]);
+  validate.params(element);
 } else {
   console.log(args[0] + ' is not currently a supported command');
   console.log('try list or requests');

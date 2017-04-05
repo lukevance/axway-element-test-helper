@@ -5,11 +5,14 @@
   },
   "operation": {
     "method": "GET",
-    "path": "/hubs/native/lists"
+    "path": "/lists"
   },
   "queryParameters": {
-    "pageSize": 40,
-    "page": 1
+    "email": "test@test.com"
+  },
+  "paths": {
+    "id": "c825aa0836",
+    "mergeId": 1
   },
   "body": {
   }

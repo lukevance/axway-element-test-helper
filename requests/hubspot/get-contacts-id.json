@@ -1,0 +1,13 @@
+{
+    "headers": {
+        "x-vendor-authorization": "d972d1f5-cd4a-4cd1-8978-5964c537c28f"
+    },
+    "paths": {
+        "vid": "748277"
+    },
+    "operation": {
+        "method": "GET",
+        "path": "/contacts/{vid}"
+    },
+    "body": {}
+}
