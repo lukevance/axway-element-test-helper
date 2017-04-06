@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+  "queryParameters": {
+    "depth" : "partial"	
+  },
+  "paths" : {
+	"id" : "46661"
+  },
+ "operation": {
+    "method": "GET",
+    "path": "/hubs/native/contacts/{id}"
+  }
+}
