@@ -1,0 +1,12 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer <your-auth-token-here>"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/folders"
+  },
+  "body": {
+		    "path": "/SampleSample2"
+  }
+}
