@@ -1,0 +1,15 @@
+{
+  "headers": {
+      "x-vendor-authorization": "Bearer your-auth-token-here",
+	 "siteAddress" : "https://cloudelements6.crm.dynamics.com/api/data/v8.0",
+	 "oauth.resource.url" :"https://cloudelements6.crm.dynamics.com/"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/accounts"
+  },
+  "body": {
+  "name": "Robot Test Account 1",
+  "address1_city" : "TestCity"
+  }
+}
