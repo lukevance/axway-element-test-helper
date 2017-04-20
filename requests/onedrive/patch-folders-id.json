@@ -1,15 +1,15 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer <your-auth-token-here>"
+    "x-vendor-authorization": "Bearer <your-token-here>"
   },
   "paths": {
-    "id": "6E126769CC1196CA!9853"
+    "id": "6E126769CC1196CA!5713"
   },
   "operation": {
     "method": "PATCH",
     "path": "/hubs/native/folders/{id}/metadata"
   },
   "body": {
-		    "path": "/SampleChanged"
+		    "name": "dup_folderPatched2"
   }
 }
