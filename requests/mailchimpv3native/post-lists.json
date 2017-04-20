@@ -1,7 +1,7 @@
 {
   "headers": {
-    "x-vendor-authorization": "Bearer your-auth-token-here",
-    "base.url":"https://us9.api.mailchimp.com/3.0"
+    "x-vendor-authorization": "Bearer your-auth-token",
+    "serverAddress":"us9.api.mailchimp.com"
   },
   "operation": {
     "method": "POST",
@@ -11,7 +11,7 @@
     "beamer_address": "us9-3f28d2bde7-886f125ea2@inbound.mailchimp.com",
 
     "contact": {
-      
+
       "address1": "baner",
       "city": "pune",
       "company": "gs lab",

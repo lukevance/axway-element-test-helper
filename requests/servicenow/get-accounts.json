@@ -1,0 +1,16 @@
+{
+  "headers": {
+     "x-vendor-authorization": "Basic your-auth-token-here",
+"base.url":"https://dev18488.service-now.com/api/now/v1/table"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/accounts"
+  },
+  "queryParameters": {
+    "pageSize": 20,
+    "page": 1,
+	"where" : "sys_created_on>='2017-03-29T01:14:22'"
+  },
+  "body": {}
+}
