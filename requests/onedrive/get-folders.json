@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer <your-auth-token-here>"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/folders/contents"
+  },
+  "queryParameters": {
+    "page": "1",
+    "pageSize": "100",
+    "path": "/"
+  },
+  "body": {
+  }
+}

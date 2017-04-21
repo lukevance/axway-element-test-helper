@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-vendor-authorization": "Bearer your-auth-token-here" 
+  },
+  "body": {
+    "name" : "cdcmkd@cdcds.com",
+	"emailAddress" : "cds@cdscsd.com"
+  },
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/contacts"
+  }
+}
+
+
