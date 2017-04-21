@@ -1,5 +1,5 @@
 "use strict";
-
+const fs = require('fs');
 const chalk = require('chalk');
 
 // function to remove amazon pieces from swagger
