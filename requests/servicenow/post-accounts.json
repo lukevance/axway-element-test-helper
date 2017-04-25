@@ -1,7 +1,7 @@
 {
     "headers": {
         "x-vendor-authorization": "Bearer your-auth-token-here",
-        "base.url": "https://dev18488.service-now.com/api/now/v1/table"
+        "subdomain": "dev18488"
     },
     "operation": {
         "method": "POST",

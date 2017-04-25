@@ -1,5 +1,6 @@
 "use strict";
 
+const moment = require("moment");
 const cehandler = require('cloudelements-cehandler');
 const fs = require('fs');
 // const inquirer = require('inquirer');
@@ -130,6 +131,22 @@ if (args.length < 1) {
 } else if (args.indexOf('validate-params') === 0) {
   let element = getElement(args[1]);
   validate.params(element);
+} else if (args.indexOf('make-req-s3') === 0 ) {
+    // check for both path to element and requestBody name
+    if (args.length >= 3) {
+      let element = getElement(args[1]);
+      getRequestBody(args[2], (requestBody) => {
+        let time = moment().format()
+          .split('').filter((char) => {
+            return char !== '-' && char !== ':';
+          });
+        let amzTime = time.join('').substring(0, time.length - 4) + "Z";
+        //20170317T153540Z
+        console.log(amzTime);
+        requestBody.headers["x-amz-date"] = amzTime;
+        makeRequest(element, requestBody);
+      });
+  }
 } else {
   console.log(args[0] + ' is not currently a supported command');
   console.log('try list or requests');
