@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "host":"gslabs-test.s3.amazonaws.com",
+    "x-amz-acl": "public-read-write",
+    "Content-Type": "text/plain",
+    "base.url": "http://gslabs-test.s3.amazonaws.com"
+  },
+  "paths": {
+    "fileName": "gslab6.txt"
+  },
+
+  "operation": {
+    "method": "POST",
+    "path": "/hubs/native/files/{fileName}"
+  },
+  "body": "Hello world from gslab6.txt"
+}
