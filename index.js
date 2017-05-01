@@ -1,6 +1,7 @@
 "use strict";
 
 const moment = require("moment");
+const ntp = require("ntp2");
 const cehandler = require('cloudelements-cehandler');
 const fs = require('fs');
 // const inquirer = require('inquirer');
@@ -140,7 +141,8 @@ if (args.length < 1) {
           .split('').filter((char) => {
             return char !== '-' && char !== ':';
           });
-        let amzTime = time.join('').substring(0, time.length - 4) + "Z";
+        //let amzTime = time.join('').substring(0, time.length - 4) + "Z";
+        let amzTime = time.join('').substring(0, time.length - 5) + "Z";
         //20170317T153540Z
         console.log(amzTime);
         requestBody.headers["x-amz-date"] = amzTime;

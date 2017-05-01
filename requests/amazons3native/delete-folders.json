@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "host":"gslabs-test.s3.amazonaws.com",
+    "x-amz-content-sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Content-Type": "text/plain",
+    "base.url": "http://gslabs-test.s3.amazonaws.com"
+  },
+  "paths": {
+	"folderName": "Sample1"
+  },
+  "operation": {
+    "method": "DELETE",
+    "path": "/hubs/native/folders/{folderName}/"
+  }
+}
