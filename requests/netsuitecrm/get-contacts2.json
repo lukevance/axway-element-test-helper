@@ -1,0 +1,20 @@
+{
+  "queryParameters": {},
+  "headers": {
+    "account-id": "TSTDRV1390918",
+    "token-id": "fc67d380f8170a57f63bb3b3e90ae914798379c5b61b9df2c4fc0c88c6b10176",
+    "token-secret": "d125fd2a746e65849fffb303767cb9c356fb75ac65a275995252e2069ef3053e",
+    "consumer-key": "e821c934b282c79acaa1772a2be627b12e0e75d2cca2e470f6ec60c3bdd9df38",
+    "consumer-secret": "ab557f4a686241290f446a36229012a8f6c0c455df605ed78c38c0fcfb703279",
+    "application-id": "156DF830-F0B9-4494-98C2-0FE2EF70D553",
+    "nonce": "dysBYEbM8GOV6JdYt81G"
+  },
+  "paths": {
+    "customerId": 1599
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/customers/{customerId}"
+  },
+  "body": {}
+}
