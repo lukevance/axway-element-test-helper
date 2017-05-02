@@ -1,0 +1,13 @@
+{
+    "headers": {
+        "x-vendor-authorization": "OAuth your-oauth-access-token"
+    },
+    "operation": {
+        "method": "GET",
+        "path": "/hubs/native/items"
+    },
+    "queryParameters": {
+      "pageSize": 50
+    },
+    "body": {}
+}

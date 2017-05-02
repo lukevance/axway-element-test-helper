@@ -1,0 +1,16 @@
+{
+    "headers": {
+        "x-vendor-authorization": "OAuth your-oauth-access-token"
+    },
+    "paths": {
+        "id": "gWqnR7mLiGIoMgM3XDqg$syaborKAPEFnk1A"
+    },
+    "operation": {
+        "method": "PATCH",
+        "path": "/hubs/native/items/{id}"
+    },
+    "body": {
+      "Name": "Discover the Moon",
+      "ListID": "gWvcho1i39rwCp0PpScjV7L$p8WKmh0S5LHg"
+    }
+}

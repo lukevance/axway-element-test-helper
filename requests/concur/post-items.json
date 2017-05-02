@@ -1,0 +1,14 @@
+{
+    "headers": {
+        "x-vendor-authorization": "OAuth your-oauth-access-token"
+    },
+    "operation": {
+        "method": "POST",
+        "path": "/hubs/native/items"
+    },
+    "body": {
+        "Level1Code": "Discover 314",
+        "ListID": "gWvcho1i39rwCp0PpScjV7L$p8WKmh0S5LHg",
+        "Name": "Discover Travel to Space"
+    }
+}
