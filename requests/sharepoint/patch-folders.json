@@ -7,7 +7,7 @@
 	 "Accept": "application/json;odata=verbose"
   },
   "queryParameters": {
-    "path": "/Udated",
+    "path": "/GslabSample2",
     "overwrite" : true
   },
 
@@ -16,5 +16,5 @@
     "path": "/hubs/native/folders"
   },
   "body":  { 
- "Name": "Udatednative"}
+ "Name": "UpdatedGslabSample2"}
 }
