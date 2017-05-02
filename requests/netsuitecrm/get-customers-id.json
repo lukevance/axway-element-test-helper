@@ -8,11 +8,11 @@
     "account-id": "TSTDRV1390918"
   },
   "paths": {
-    "id": 1599
+    "customerId": 1599
   },
   "operation": {
     "method": "GET",
-    "path": "/hubs/native/customers/{customerId}"
+    "path": "/customers/{customerId}"
   },
   "body": {}
 }

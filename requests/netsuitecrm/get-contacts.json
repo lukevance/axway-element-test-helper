@@ -1,16 +1,14 @@
 {
   "headers": {
-    "application-id": "E70F2A24-916E-4897-B56D-A36287222F62",
     "token-id": "0cf5e798f0272d8962b349c4a03b6c8ac850bc70538c0dd6fcef455df6994988",
     "token-secret": "1045efa669cf9b404dabf91cd556d25a6b173a7f3d71c3c7db9e651851b3bcdc",
     "consumer-key": "947e027e560115d43d4ca22db4ea695c7e641c2ebe1bdcf5fed24ac6f8aa6a4c",
     "consumer-secret": "02ce4cb74072e1adb3bbea44b9be1776333d66e92f6e67648892f87af29b5f13",
-    "account-id": "TSTDRV1390918",
-    "nonce": "ufaq11Vud5uaXhLVJxS4"
+    "account-id": "TSTDRV1390918"
   },
   "operation": {
     "method": "GET",
-    "path": "/hubs/native/customers"
+    "path": "/customers"
   },
   "queryParameters": {},
   "body": {}
