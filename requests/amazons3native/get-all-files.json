@@ -1,8 +1,7 @@
 {
   "headers": {
-    "host":"gslabs-test.s3.amazonaws.com",
     "Content-Type": "application/x-www-form-urlencoded",
-    "base.url": "http://gslabs-test.s3.amazonaws.com"
+    "bucket_name": "gslabs-test"
   },
   "operation": {
     "method": "GET",

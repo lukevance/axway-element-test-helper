@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^1.1.3",
-    "cloudelements-cehandler": "^0.5.1",
+    "cloudelements-cehandler": "0.5.6",
     "inquirer": "^3.0.5",
     "lodash": "^4.17.4",
     "moment": "^2.18.1"
