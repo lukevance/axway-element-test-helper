@@ -6,7 +6,7 @@
   },
   "operation": {
     "method": "GET",
-    "path": "/hubs/native/service"
+    "path": "/hubs/native/files"
   },
   "body": {
   }
