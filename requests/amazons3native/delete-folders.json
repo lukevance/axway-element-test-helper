@@ -3,7 +3,7 @@
     "host":"gslabs-test.s3.amazonaws.com",
     "x-amz-content-sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Content-Type": "text/plain",
-    "base.url": "http://gslabs-test.s3.amazonaws.com"
+    "bucket_name": "gslabs-test"
   },
   "paths": {
 	"folderName": "Sample1"

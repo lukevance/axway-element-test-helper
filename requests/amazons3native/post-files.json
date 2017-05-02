@@ -3,7 +3,7 @@
     "host":"gslabs-test.s3.amazonaws.com",
     "x-amz-acl": "public-read-write",
     "Content-Type": "text/plain",
-    "base.url": "http://gslabs-test.s3.amazonaws.com"
+    "bucket_name": "gslabs-test"
   },
   "paths": {
     "fileName": "gslab6.txt"
