@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "host":"snapshot.cloud-elements.s3.amazonaws.com",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "base.url": "http://snapshot.cloud-elements.s3.amazonaws.com"
+  },
+  "paths": {
+	"fileName": "testit2.txt",
+	"folderName":"testDirectory"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/folders/{folderName}/{fileName}"
+  },
+  "body": {
+  }
+}

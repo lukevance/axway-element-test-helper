@@ -1,0 +1,13 @@
+{
+  "headers": {
+	  "x-vendor-authorization": "your-auth-bearer",
+    "Content-Type": "application/json",
+    "Accept": "application/json;odata=verbose"
+  },
+  "operation": {
+    "method": "GET",
+    "path": "/hubs/native/folders"
+  },
+  "body": {
+  }
+}
