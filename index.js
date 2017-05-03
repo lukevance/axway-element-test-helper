@@ -21,50 +21,13 @@ const getElement = (path) => {
 
 const getRequestBody = (fileNamePath, next) => {
   console.log(fileNamePath);
-  if (fileNamePath){
-    // attach json if necessary
-    if (fileNamePath.indexOf('.json') === -1) {
-      fileNamePath = fileNamePath + '.json';
-    }
-    // check if it's a path or just name
-    if (fileNamePath.indexOf('/') < 0) {
-      // check /requests for given fileName
-      fs.readdir('./requests', (err, files) => {
-        if (err) {throw err;}
-        if (files.indexOf(fileNamePath) >= 0){
-          let body = require('./requests/' + fileNamePath);
-          next(body);
-        } else {
-          console.log('Request body file not found.');
-        }
-      });
-    // filenName includes path, check for request name in path
-    } else if ((fileNamePath.split('/')[0].length > 1) && (fileNamePath.split('/')[1].length > 1)) {
-      let subdir = fileNamePath.split('/')[0];
-      let fileName = fileNamePath.split('/')[1];
-      // check /requests for subdir
-      fs.readdir('./requests', (err, files) => {
-        if (err) {throw err;}
-        if (files.indexOf(subdir) >= 0){
-          // check subDir for fileName
-          fs.readdir('./requests/' + subdir, (err, subFiles) => {
-            if (err) {throw err;}
-            if (subFiles.indexOf(fileName) >= 0) {
-              let body = require('./requests/' + fileNamePath);
-              next(body);
-            } else {
-              console.log('Request body file ' + fileNamePath + ' not found.');
-            }
-          });
-        } else {
-          console.log('Directory ' + subdir + ' not found.');
-        }
-      });
-    } else {
-      console.log("please provide the name of subdirectory of requests and a valid request object name");
-    }
-  } else {
-    console.log("please provide a valid request object name or path");
+  if (fs.existsSync(fileNamePath)) {
+    fs.readFile(fileNamePath, (err, data) => {
+      if (err) throw err;
+      next(data);
+    });
+  } else { // can't find file, bail
+    console.log("please provide a valid file path for a request object");
   }
 };
 
@@ -123,7 +86,7 @@ if (args.length < 1) {
   } else {
     console.log('please include a request object and an element.json file');
   }
-} else if (args.indexOf('rm-prop') === 0) {
+} else if (args.indexOf('rm-prop') === 0) { // strip aws properties
   let swagger = getElement(args[1]);
   removeAmazon(swagger, args[2]);
 } else if (args.indexOf('validate-hooks') === 0) {
