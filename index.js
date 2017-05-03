@@ -1,8 +1,8 @@
 "use strict";
 
 const moment = require("moment");
-const ntp = require("ntp2");
-const cehandler = require('cloudelements-cehandler');
+// const cehandler = require('cloudelements-cehandler');
+const cehandler = require('../lambdax');
 const fs = require('fs');
 // const inquirer = require('inquirer');
 const chalk = require('chalk');
@@ -22,9 +22,9 @@ const getElement = (path) => {
 const getRequestBody = (fileNamePath, next) => {
   console.log(fileNamePath);
   if (fs.existsSync(fileNamePath)) {
-    fs.readFile(fileNamePath, (err, data) => {
+    fs.readFile(fileNamePath, 'utf8', (err, data) => {
       if (err) throw err;
-      next(data);
+      next(JSON.parse(data));
     });
   } else { // can't find file, bail
     console.log("please provide a valid file path for a request object");
@@ -32,6 +32,7 @@ const getRequestBody = (fileNamePath, next) => {
 };
 
 const executeCall = (element, request_data) => {
+  console.log(request_data);
   return cehandler.handler(element)(request_data, {
       requestId: 'fake-run-request',
       succeed: o => {
