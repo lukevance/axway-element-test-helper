@@ -15,5 +15,9 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "ntp2": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1"
   }
 }

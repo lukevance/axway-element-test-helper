@@ -3,7 +3,8 @@ const fs = require('fs');
 const chalk = require('chalk');
 
 // function to remove amazon pieces from swagger
-const removeAmazon = (swagger, propertyPathString) => {
+const removeAmazon = (swagger, fileName) => {
+  let propertyPathString = 'paths.all';
   try {
     if (swagger && propertyPathString) {
       let propertyPath = propertyPathString.split('.');
@@ -25,7 +26,7 @@ const removeAmazon = (swagger, propertyPathString) => {
               }
             });
           });
-          fs.writeFile('hubspot_swagger_NEW.json', JSON.stringify(swagger), (err) => {
+          fs.writeFile('NEW_' + fileName, JSON.stringify(swagger), (err) => {
             if (err) throw err;
             console.log('The file has been saved!');
           });
