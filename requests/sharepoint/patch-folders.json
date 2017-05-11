@@ -1,20 +1,20 @@
 {
   "headers": {
-    "x-vendor-authorization":"Bearer your-auth-bearer",
-	"Content-Type":"application/json",
-	"IF-MATCH":"*",
-	"X-HTTP-Method":"MERGE",
-	 "Accept": "application/json;odata=verbose"
+    "x-vendor-authorization": "Bearer your-auth-token",
+    "Accept": "application/json;odata=verbose"
   },
   "queryParameters": {
-    "path": "/GslabSample2",
-    "overwrite" : true
+    "overwrite": true
   },
+
+  "path": "/GslabSample2",
+
 
   "operation": {
     "method": "PATCH",
-    "path": "/hubs/native/folders"
+    "path": "/folders"
   },
-  "body":  { 
- "Name": "UpdatedGslabSample2"}
+  "body": {
+    "Name": "UpdatedGslabSample3"
+  }
 }

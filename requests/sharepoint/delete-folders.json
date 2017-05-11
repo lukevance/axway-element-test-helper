@@ -1,16 +1,15 @@
 {
   "headers": {
-	  "x-vendor-authorization": "your-auth-bearer",
-    "Content-Type": "application/json",
+	  "x-vendor-authorization": "Bearer your-auth-token",
     "Accept": "application/json;odata=verbose"
   },
-	"queryParameters": {
-		"folderpath": "/GslabSample"
-	},
-
+  "queryParameters": {},
+  "paths": {
+    "id": "49e2b912-8e2e-4034-83f6-f9fd9639908d"
+},
   "operation": {
     "method": "DELETE",
-    "path": "/hubs/native/folders"
+    "path": "/folders/{id}"
   },
   "body": {
   }

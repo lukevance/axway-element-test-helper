@@ -1,7 +1,6 @@
 {
   "headers": {
-    "x-vendor-authorization":"Bearer your-auth-bearer",
-    "Content-Type": "application/json",
+    "x-vendor-authorization":"Bearer your-auth-token",
     "Accept": "application/json;odata=verbose"
   },
   "queryParameters": {
