@@ -40,3 +40,12 @@ Examples:
 $ node index.js make-req /path/to/element.json requests/zendesk/get-contacts.json
 ```
 The result of your call will be logged in the terminal.
+
+
+REMOVE AMAYZ
+Examples:
+
+```bash
+$ node index.js rm-amazon /path/to/swagger.json
+```
+That shiz is fixed now
